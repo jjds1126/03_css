@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/*
+    사이트를 구성하는데 필요한 아이콘들을 미리 모아놓고 사용할 수 있도록 제공중
+    아이콘팩
+    폰트 어썸 (font-awesome) :
+    회원가입 또는 로그인 해서 제공된 js를 html에 삽입
+
+    이렇게 제공되는 아이콘팩은 그림 파일은 맞음
+    png나 jpg 같은 그림 파일은 1픽셀씩 저장되는 점들의 집합 파일이지만,
+    svg 형식의 그림 파일 -> 벡터 그래픽 파일
+
+
+    일반 그림 파일은 크기를 늘리면 화질 저하가 일어남
+    svg 형식의 그림 파일은 벡터 형식이기 떄문에 크기를 늘려도 화질 저하가 일어나지 않으며
+                                                            색싹을 변경하는 것도 가능함
+ */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    min-height: 1000dvh;
+    background-color: #f3f4f6;
+    color: #1f2937;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    background-color: #111827;
+    color: white;
+    flex-shrink: 0;
+}
+
+.logo{
+    height: 80px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 1px solid #374141;
+}
+
+.brand-icon{
+    font-size: 24px;
+    color: #3b82f6;
+}
+
+.logo span{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+main{
+    flex: 1;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 16px 30px;
+    color: #9ca3af;
+    font-size: 15px;
+    transition: 0.5s;
+}
+
+nav ul li.active,
+nav ul li:hover{
+    background-color: #1f2937;
+    color: white;
+}
+
+nav ul li.active {
+    border-left: 4px solid #3b82f6;
+    color: #3b82f6;
+}
+
+header {
+    height: 80px;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 0 40px;
+}
+
+.header-text h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #111827;
+}
+.header-text span{
+    font-size: 13px;
+    color: #6b7280;
+}
+
+.user-shortcut{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #6b7280;   /* 글자와 관력이 된 속성값은 자식에게까지 전파*/
+    font-size: 18px;
+}
+
+.user-avatar-small {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2563eb;
+    background-color: #dbeafe;
+}
+
+
+
+
+
+.content-wrapper {
+    padding: 80px;
+}
+
+
+.profile-card {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+/* 프로필 사진 */
+
+.profile-photo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.user-avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dbeafe;
+    color: #2563eb;
+    font-size: 18px;
+}
+
+
+/* Upload / Remove */
+
+.photo-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+
+.photo-buttons button {
+    height: 38px;
+    padding: 0 16px;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.upload-btn {
+    border: none;
+    background-color: #2563eb;
+    color: white;
+}
+
+
+.remove-btn {
+    border: 1px solid #d1d5db;
+    background-color: white;
+    color: #374151;
+}
+
+
+/* 구분선 */
+
+.profile-card hr {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 30px 0;
+}
+
+
+/* First Name / Last Name */
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+
+.form-row .form-group {
+    flex: 1;
+}
+
+
+/* label + input */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 13px;
+    color: #374151;
+}
+
+
+.form-group input {
+    width: 100%;
+    height: 44px;
+    padding: 0 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    outline: none;
+    font-size: 14px;
+    color: #374151;
+}
+
+
+.form-group input:focus {
+    border-color: #2563eb;
+}
+
+
+/* 아래쪽 버튼 */
+
+.form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+
+.form-buttons button {
+    height: 40px;
+    padding: 0 18px;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+
+.cancel-btn {
+    border: 1px solid #d1d5db;
+    background-color: white;
+    color: #374151;
+}
+
+
+.save-btn {
+    border: none;
+    background-color: #2563eb;
+    color: white;
+}
+
+.checkbox {
+    width: 22px;
+    height: 22px;
+    border: 2px solid #d1d5db;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding-bottom: 4px;
+    margin-right: 10px;
+}
+
+.checkbox-icon{
+    width: 6px;
+    height: 10px;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    transform: rotate(45deg);
+}
+
+.hidden-checkbox:checked + .checkbox-box{
+    background-color: red;
+    border-color: red;
+}

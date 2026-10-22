@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1beb2e601c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<aside>
+    <div class="logo">
+            <i class="fa-solid fa-cube brand-icon"></i>
+            <span>MyDash</span>
+    </div>
+    <nav>
+        <ul>
+            <li class="active">
+                <i class="fa-regular fa-id-badge"></i>
+                <span>Profile Info</span>
+            </li>
+            <li>
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>Account Security</span>
+            </li>
+            <li>
+                <i class="fa-regular fa-bell"></i>
+                <span>Notifications</span>
+            </li>
+            <li>
+                <i class="fa-solid fa-credit-card"></i>
+                <span>Billing Details</span>
+            </li>
+        </ul>
+    </nav>
+</aside>
+<main>
+    <header>
+        <div class="header-text">
+            <h2>Profile Information</h2>
+            <span>Update your photo and personal details.</span>
+        </div>
+        <div class="user-shortcut">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="user-avatar-small">A</div>
+        </div>
+    </header>
+    <div class="content-wrapper">
+        <div class="profile-card">
+
+            <!-- 프로필 사진 -->
+            <div class="profile-photo">
+
+                <div class="user-avatar">
+                    A
+                </div>
+
+                <div class="photo-buttons">
+
+                    <button class="upload-btn">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                        Upload
+                    </button>
+
+                    <button class="remove-btn">
+                        <i class="fa-solid fa-trash-can"></i>
+                        Remove
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <hr>
+
+
+            <!-- 이름 -->
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+
+                    <input
+                            type="text"
+                            id="first-name"
+                            name="first-name"
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+
+                    <input
+                            type="text"
+                            id="last-name"
+                            name="last-name"
+                    >
+                </div>
+
+            </div>
+
+
+            <!-- 이메일 -->
+            <div class="form-group">
+                <label for="email">Email</label>
+
+                <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        value="abc@abc.com"
+                >
+            </div>
+
+
+            <!-- 전화번호 -->
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+
+                <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                >
+            </div>
+
+
+            <hr>
+
+
+            <!-- 아래쪽 버튼 -->
+            <div class="form-buttons">
+
+                <button class="cancel-btn">
+                    Cancel
+                </button>
+
+                <button class="save-btn">
+                    Save Changes
+                </button>
+
+            </div>
+            <label class="checkbox-wrapper">
+            <input type="checkbox" class="hidden-checkbox" />
+                <div class="checkbox-box">
+                    <div class="checkbox-box"></div>
+                </div>
+            Receive updates and newsletters via email
+            </label>
+        </div>
+
+    </div>
+
+</main>
+</body>
+</html>
